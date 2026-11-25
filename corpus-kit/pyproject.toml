@@ -6,9 +6,17 @@ requires-python = ">=3.10"
 dependencies = []
 
 [project.optional-dependencies]
+web = ["aiohttp>=3.9"]
 crawl = ["yt-dlp>=2024.1.0"]
 ocr = ["rapidocr>=3.0", "onnxruntime>=1.16", "opencv-python-headless>=4.8", "Pillow>=10"]
-all = ["yt-dlp>=2024.1.0", "rapidocr>=3.0", "onnxruntime>=1.16", "opencv-python-headless>=4.8", "Pillow>=10"]
+all = [
+  "aiohttp>=3.9",
+  "yt-dlp>=2024.1.0",
+  "rapidocr>=3.0",
+  "onnxruntime>=1.16",
+  "opencv-python-headless>=4.8",
+  "Pillow>=10",
+]
 
 [project.scripts]
 corpus-kit = "corpus_kit.cli:main"

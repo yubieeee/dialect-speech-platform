@@ -12,6 +12,11 @@ cosy-lab/
 └── README.md
 ```
 
+## 运行环境
+
+conda **`tts`**（`/home/apc/miniconda3/envs/tts/bin/python`）。`run.sh` 默认该解释器；可用 `COSY_PYTHON` 覆盖。  
+与 `voice-engine` TTS worker **共用**此 env，争 GPU 时先停现役或错开显存。不要用系统 pip 给本台装包。
+
 ## 启动
 
 ```bash

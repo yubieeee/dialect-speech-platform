@@ -1,38 +1,47 @@
-# dialect-assets · 方言研究资产
+# dialect-assets · 多方言研究资产
 
-语料、词典摘录、听感评测、资料台账。**不放**平台业务代码、不放模型权重。
+本目录只放 **按方言划分的数据**。入库 / 调试等通用脚本在上一层：
 
-## 目录一览
+| 共用工具（平台根） | 职责 |
+|--------------------|------|
+| [`../corpus-kit/`](../corpus-kit/) | crawl / mine / ingest / qc |
+| [`../cosy-lab/`](../cosy-lab/) | CosyVoice3 调试台与批跑 |
+
+## 布局
 
 ```text
 dialect-assets/
 ├── README.md
-├── .gitignore
-├── image/                 # 投放：音标/短文截图（金标文本）
-├── video/                 # 投放：录屏/成片 + .srt / .gold.srt
-└── wenchang/              # 正式方言资产（见该目录 README）
-    ├── manifest.jsonl
-    ├── wav16k/  raw/  refs/
+├── .gitignore                 # 多方言共用忽略规则
+└── <dialect>/                 # 例如 wenchang/；以后可加 shanghai/ …
+    ├── image/                 # 该方言：音标/短文截图
+    ├── video/                 # 该方言：录屏/成片 + .srt / .gold.srt
+    ├── inbox/                 # mine 投放
+    ├── raw/  wav16k/  refs/
     ├── sentences/  lexicon/  phonology/
     ├── train/data/  train/exports/
     ├── evals/  reports/
-    └── sources/           # 台账 + private_files（整书等，gitignore）
+    ├── sources/               # 台账 + private_files
+    └── manifest.jsonl
 ```
+
+本目录无独立 Python 环境。入库 / 调试走上层工具，均用 conda **`tts`**：
+
+```bash
+conda activate tts
+PYTHONPATH=corpus-kit python -m corpus_kit init --dialect <name>
+```
+
+## 当前方言
+
+- [`wenchang/`](wenchang/) — 文昌话（TTS-28）
 
 ## 分层原则
 
 | 层 | 放什么 | Git |
 |----|--------|-----|
 | 清单与摘录 | manifest、评测句、字音表、音系、书目 | **可提交** |
-| 小样音频 | 少量参考 wav、代表性听感样例 | 可选 / LFS |
-| 大批量原始件 | 整书、爬取包、OCR 中间帧 | **不提交**（见 `.gitignore`） |
-| 密钥 | API Key | **禁止**；仓外存放 |
+| 图截 | `image/` 小图 | 可提交 |
+| 口播视频 / 整书 / wav | `video/`、`private_files/`、`wav16k/` | **不提交**（见 `.gitignore`） |
 
-## 怎么用
-
-1. 新媒体丢进 `image/` 或 `video/`（字幕配对 `.gold.srt`）
-2. `corpus-kit mine` / `ingest` → 写入 `wenchang/`
-3. 训练清单：[`wenchang/train/data/`](wenchang/train/data/)
-4. 图截拼音金标：[`wenchang/sentences/short_texts_phonetic.md`](wenchang/sentences/short_texts_phonetic.md)
-
-上游 Cosy 源码与权重在 `voice-engine/.runtime/`，不要拷进本目录。
+上游 Cosy 权重在 `voice-engine/.runtime/`，不要拷进本目录。

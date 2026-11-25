@@ -1,12 +1,12 @@
 text_zh	phonetic	gold_id	source
-大家好。	ddua¹ ge¹ hho³	yg_01	image/带音标短文
-在海南儋州洋浦，	ddu⁵ hhai³ nam² ddam¹ ziu¹ io² pu²	yg_02	image/带音标短文
-藏着一片延续一千二百多年的海盐工坊——千年古盐田。	ho⁴ ddo³ yiag⁸ pin⁴ yin² dua⁴ yiag⁸ sai¹ no⁵ be⁶ ddoi¹ hhi² gai² hhai³ iam² gang¹ pang² sai¹ hhi² gou³ iam² san²	yg_03	image/带音标短文
-这里，是我国最早的日晒制盐点之一，	ze⁴ lou¹ di⁵ va³ gog⁷ dui⁴ da³ gai² yid⁸ sai⁴ zi⁴ iam² ddiam³ se¹ yiag⁸	yg_04	image/带音标短文
-也是海南独有的人文风景。	yia¹ di⁵ hhai³ nam² ddog⁸ u⁵ gai² nang² vun² hhuang¹ geng³	yg_05	image/带音标短文
-古时候盐工们就地取材，把火山岩凿成浅浅的石盐槽。	gou³ di² hhao¹ iam² gang¹ mui² ziu⁵ ddi⁵ si³ sai² bue⁵ hhue³ dua¹ ngam² sag⁸ zia² sin³ sin³ gai² zio⁵ iam² sao²	yg_06	image/带音标短文
-涨潮时海水漫进石槽。	ziang⁵ siao² di² hhai³ dui³ man⁶ zin⁴ zio⁵ sao²	yg_07	image/带音标短文
-退潮之后，烈日海风慢慢蒸发海水。	hui⁴ siao² se¹ ao⁵ lid⁸ yid⁸ hhai³ hhuang¹ man¹ man¹ zeng¹ hhuad⁷ hhai³ dui³	yg_08	image/带音标短文
-几天之后，洁白的海盐就在石槽里结晶。	gui³ yid⁸ se¹ ao⁵ gid⁷ be⁵ gai² hhai³ iam² ziu⁵ ddu⁵ zio⁵ sao² lai⁵ gid⁷ zeng¹	yg_09	image/带音标短文
-没有复杂机器，靠的是阳光、海风、火山石，是古人顺应自然的生存智慧。	vo² u⁵ pog⁸ da⁵ gi¹ hi⁴ hao⁶ gai² di⁵ yiang² guang¹ hhai³ hhuang¹ hhue³ dua¹ zio⁵ di⁵ gou³ nang² dun⁵ eng⁴ se⁵ yin² gai² de¹ sun² zi⁴ hhui⁴	yg_10	image/带音标短文
-一千多年，日出晒盐，日落收盐，代代相传。	yiag⁸ sai¹ ddoi¹ hhi² yid⁸ sud⁷ pag⁸ iam² yid⁸ lag⁷ diu¹ iam² ddai⁵ ddai⁵ dio¹ suan²	yg_11	image/带音标短文
+大家好。	ddua¹ ge¹ hho³	yg_01	../image/带音标短文
+在海南儋州洋浦，	ddu⁵ hhai³ nam² ddam¹ ziu¹ io² pu²	yg_02	../image/带音标短文
+藏着一片延续一千二百多年的海盐工坊——千年古盐田。	ho⁴ ddo³ yiag⁸ pin⁴ yin² dua⁴ yiag⁸ sai¹ no⁵ be⁶ ddoi¹ hhi² gai² hhai³ iam² gang¹ pang² sai¹ hhi² gou³ iam² san²	yg_03	../image/带音标短文
+这里，是我国最早的日晒制盐点之一，	ze⁴ lou¹ di⁵ va³ gog⁷ dui⁴ da³ gai² yid⁸ sai⁴ zi⁴ iam² ddiam³ se¹ yiag⁸	yg_04	../image/带音标短文
+也是海南独有的人文风景。	yia¹ di⁵ hhai³ nam² ddog⁸ u⁵ gai² nang² vun² hhuang¹ geng³	yg_05	../image/带音标短文
+古时候盐工们就地取材，把火山岩凿成浅浅的石盐槽。	gou³ di² hhao¹ iam² gang¹ mui² ziu⁵ ddi⁵ si³ sai² bue⁵ hhue³ dua¹ ngam² sag⁸ zia² sin³ sin³ gai² zio⁵ iam² sao²	yg_06	../image/带音标短文
+涨潮时海水漫进石槽。	ziang⁵ siao² di² hhai³ dui³ man⁶ zin⁴ zio⁵ sao²	yg_07	../image/带音标短文
+退潮之后，烈日海风慢慢蒸发海水。	hui⁴ siao² se¹ ao⁵ lid⁸ yid⁸ hhai³ hhuang¹ man¹ man¹ zeng¹ hhuad⁷ hhai³ dui³	yg_08	../image/带音标短文
+几天之后，洁白的海盐就在石槽里结晶。	gui³ yid⁸ se¹ ao⁵ gid⁷ be⁵ gai² hhai³ iam² ziu⁵ ddu⁵ zio⁵ sao² lai⁵ gid⁷ zeng¹	yg_09	../image/带音标短文
+没有复杂机器，靠的是阳光、海风、火山石，是古人顺应自然的生存智慧。	vo² u⁵ pog⁸ da⁵ gi¹ hi⁴ hao⁶ gai² di⁵ yiang² guang¹ hhai³ hhuang¹ hhue³ dua¹ zio⁵ di⁵ gou³ nang² dun⁵ eng⁴ se⁵ yin² gai² de¹ sun² zi⁴ hhui⁴	yg_10	../image/带音标短文
+一千多年，日出晒盐，日落收盐，代代相传。	yiag⁸ sai¹ ddoi¹ hhi² yid⁸ sud⁷ pag⁸ iam² yid⁸ lag⁷ diu¹ iam² ddai⁵ ddai⁵ dio¹ suan²	yg_11	../image/带音标短文

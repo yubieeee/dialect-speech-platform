@@ -4,7 +4,7 @@
 
 | 文件 | 内容 |
 |------|------|
-| [`wenchang_ipa.tsv`](wenchang_ipa.tsv) | 海南拼音 → 文昌 IPA（tone/initial/final），自 `image/文昌话音标对应/` |
+| [`wenchang_ipa.tsv`](wenchang_ipa.tsv) | 海南拼音 → 文昌 IPA（tone/initial/final），自 `../image/文昌话音标对应/` |
 | [`romanization.md`](romanization.md) | 方案说明与文昌特征差异摘要 |
 | `sandhi.md` | （待）连读变调 |
 

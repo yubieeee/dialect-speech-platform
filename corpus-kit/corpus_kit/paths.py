@@ -34,6 +34,8 @@ def ensure_dialect_dirs(dialect: str) -> Path:
         "evals",
         "lab_uploads",
         MEDIA_INBOX,
+        "image",
+        "video",
         "sentences",
         "lexicon",
         "phonology",

@@ -19,6 +19,8 @@
 | [meetings/原文-海南城投对齐.md](meetings/原文-海南城投对齐.md) | 会议原文转写 |
 | [product/方言语音平台功能介绍｜产品经理版.docx](product/方言语音平台功能介绍｜产品经理版.docx) | PRD |
 
+本目录无运行时。工具环境见平台根 [`README.md`](../README.md)：研究侧 conda `tts`；平台 `asr-tts` 用 uv `.venv`。
+
 **研究资产** → [`../dialect-assets/`](../dialect-assets/)  
 **语料入库** → [`../corpus-kit/`](../corpus-kit/)  
 **Cosy 调试台** → [`../cosy-lab/`](../cosy-lab/)

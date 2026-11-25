@@ -1,6 +1,6 @@
 # 文昌口音罗马字 / 海南拼音（摘录）
 
-来源：`dialect-assets/image/文昌话音标对应/` 截图（口音对照表），研究摘录。  
+来源：`dialect-assets/wenchang/image/文昌话音标对应/` 截图（口音对照表），研究摘录。  
 **机器可读全表**：[`wenchang_ipa.tsv`](wenchang_ipa.tsv)（tone / initial / final）。
 
 ## 声调（文昌口音）

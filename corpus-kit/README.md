@@ -2,11 +2,36 @@
 
 目标产物：**音频 + 文本对齐**的 `manifest.jsonl`。
 
+已具备入库前处理雏形：`init` / `mine` / `ocr-subs` / `crawl` / `ingest` / `qc` / `slim`。  
+本地 Web 台（推荐日常用）：
+
+```bash
+conda activate tts              # 或直接跑 run.sh（已指向该 env）
+cd corpus-kit/web
+./run.sh
+# http://127.0.0.1:7870
+```
+
+## 运行环境
+
+**conda `tts`**（`/home/apc/miniconda3/envs/tts/bin/python`）。`web/run.sh` 默认用它；可用 `CORPUS_KIT_PYTHON` 覆盖。
+
+缺依赖时在 **该 env 内** 安装，勿用系统 pip：
+
+```bash
+conda activate tts
+pip install -U aiohttp yt-dlp rapidocr onnxruntime opencv-python-headless Pillow
+```
+
+系统 `/usr/bin/ffmpeg` 可直接用。
+
 ## 依赖
 
-- Python ≥ 3.10
+- conda `tts`（Python ≥ 3.10）
 - `ffmpeg` / `ffprobe`
-- **网络爬取**：`pip install -U yt-dlp`
+- Web 台：`aiohttp`
+- 网络爬取：`yt-dlp`
+- 硬字幕 OCR：`rapidocr` + `onnxruntime` + Pillow
 
 ## 路径 A：网络爬取（推荐省事）
 
@@ -14,10 +39,11 @@
 
 ```bash
 cd /home/apc/xny/dialect-speech-platform
-pip install -U yt-dlp   # 若未装
+conda activate tts
+# 缺 yt-dlp 时: pip install -U yt-dlp
 
 # urls.txt 一行一个链接
-PYTHONPATH=corpus-kit python3 -m corpus_kit crawl \
+PYTHONPATH=corpus-kit python -m corpus_kit crawl \
   --dialect wenchang \
   --url-file urls.txt \
   --i-have-rights \
@@ -28,7 +54,7 @@ PYTHONPATH=corpus-kit python3 -m corpus_kit crawl \
 单条：
 
 ```bash
-PYTHONPATH=corpus-kit python3 -m corpus_kit crawl \
+PYTHONPATH=corpus-kit python -m corpus_kit crawl \
   --dialect wenchang \
   --url 'https://…' \
   --i-have-rights \
@@ -49,19 +75,21 @@ PYTHONPATH=corpus-kit python3 -m corpus_kit crawl \
 
 ## 路径 B：录屏 + 硬字幕 OCR（视频号等）
 
-微信视频号等无法直链下载时：本机录屏（画面上有字幕）→ OCR 出时间轴 → 切音文对。
+微信视频号等无法直链下载时：本机录屏（画面上有字幕）→ OCR 出时间轴 → 切音文对。  
+媒资放在对应方言目录：`dialect-assets/<dialect>/video/` 或 `inbox/`。
 
 ```bash
-pip install -U rapidocr onnxruntime opencv-python-headless Pillow
+conda activate tts
+# 缺 OCR 依赖时: pip install -U rapidocr onnxruntime opencv-python-headless Pillow
 
-# 只生成 srt
-PYTHONPATH=corpus-kit python3 -m corpus_kit ocr-subs \
-  --input ~/Videos/文昌新闻录屏.mp4 \
+# 只生成 srt（可对 dialect-assets/wenchang/video/*.mp4）
+PYTHONPATH=corpus-kit python -m corpus_kit ocr-subs \
+  --input dialect-assets/wenchang/video/某录屏.mp4 \
   --ocr-band 0.68,0.95
 
 # 或一步入库（无软字幕时自动 OCR）
-# 把录屏丢进 inbox/ 后：
-PYTHONPATH=corpus-kit python3 -m corpus_kit mine \
+# 把录屏丢进 dialect-assets/wenchang/inbox/ 后：
+PYTHONPATH=corpus-kit python -m corpus_kit mine \
   --dialect wenchang \
   --ocr-hardsubs \
   --require-text \
@@ -85,7 +113,7 @@ dialect-assets/wenchang/inbox/
 ```
 
 ```bash
-PYTHONPATH=corpus-kit python3 -m corpus_kit mine \
+PYTHONPATH=corpus-kit python -m corpus_kit mine \
   --dialect wenchang --require-text --license-note "self_record"
 ```
 

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>corpus-kit 入库台</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>corpus-kit 入库台</h1>
+    <p class="sub">方言语料入库前处理 · mine / OCR / crawl / ingest / qc · 产物写入 <code>dialect-assets/&lt;dialect&gt;/</code></p>
+    <div>
+      <span id="verBadge" class="badge">…</span>
+      <span id="pathBadge" class="badge">…</span>
+      <span id="jobBadge" class="badge">任务空闲</span>
+    </div>
+  </header>
+
+  <div class="topbar">
+    <div>
+      <label>方言 dialect</label>
+      <select id="dialect"></select>
+    </div>
+    <div>
+      <label>新建方言</label>
+      <div class="row">
+        <input type="text" id="newDialect" placeholder="例如 shanghai" />
+        <button class="ghost" id="btnInit" type="button">init</button>
+      </div>
+    </div>
+    <div>
+      <button class="ghost" id="btnRefresh" type="button">刷新状态</button>
+    </div>
+  </div>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="overview">总览</button>
+    <button class="tab" data-tab="mine">本机媒资 mine</button>
+    <button class="tab" data-tab="ocr">硬字幕 OCR</button>
+    <button class="tab" data-tab="crawl">网络 crawl</button>
+    <button class="tab" data-tab="ingest">短音频 ingest</button>
+    <button class="tab" data-tab="ops">QC / slim / 清单</button>
+  </nav>
+
+  <section id="overview" class="panel active">
+    <div class="warn">
+      这是入库<strong>前处理</strong>台：把视频/音频切成音文对写入 manifest。文昌话硬字幕用 OCR；
+      <strong>不要</strong>对文昌口播直接用百炼 ASR 当金标。
+    </div>
+    <div class="stat" id="stats"></div>
+    <div class="grid grid-2">
+      <div>
+        <div class="section-title">inbox / video</div>
+        <p class="hint">点击填入下方表单路径。上传默认进 inbox。</p>
+        <div class="row">
+          <div>
+            <label>上传到</label>
+            <select id="uploadDest">
+              <option value="inbox">inbox/</option>
+              <option value="video">video/</option>
+            </select>
+          </div>
+          <div>
+            <label>选择文件</label>
+            <input type="file" id="uploadFile" multiple />
+          </div>
+        </div>
+        <button class="primary" id="btnUpload" type="button" style="margin-top:10px">上传</button>
+        <div id="mediaList" class="list" style="margin-top:12px"></div>
+      </div>
+      <div>
+        <div class="section-title">最近任务</div>
+        <pre id="jobLog">等待操作…</pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="mine" class="panel">
+    <div class="grid grid-2">
+      <div>
+        <div class="section-title">本机媒资 → 切句入库</div>
+        <label>input 目录（空=方言 inbox/）</label>
+        <input type="text" id="mineInput" placeholder="留空则用 dialect-assets/&lt;dialect&gt;/inbox/" />
+        <div class="row" style="margin-top:10px">
+          <div>
+            <label>speaker</label>
+            <input type="text" id="mineSpeaker" />
+          </div>
+          <div>
+            <label>locale</label>
+            <input type="text" id="mineLocale" placeholder="min-hainan-wenchang" />
+          </div>
+        </div>
+        <label style="margin-top:10px">license_note</label>
+        <input type="text" id="mineLicense" value="local_media_drop" />
+        <div class="row" style="margin-top:10px">
+          <div>
+            <label>split</label>
+            <select id="mineSplit">
+              <option value="auto">auto</option>
+              <option value="cues">cues</option>
+              <option value="silence">silence</option>
+              <option value="none">none</option>
+            </select>
+          </div>
+          <div>
+            <label>min_sec / max_sec</label>
+            <div class="row">
+              <input type="number" id="mineMinSec" value="1.5" step="0.1" />
+              <input type="number" id="mineMaxSec" value="20" step="0.5" />
+            </div>
+          </div>
+        </div>
+        <div class="checks">
+          <label><input type="checkbox" id="mineRequireText" /> require_text</label>
+          <label><input type="checkbox" id="mineOcr" /> ocr_hardsubs（无软字幕时）</label>
+          <label><input type="checkbox" id="mineNoSubs" /> no_subs</label>
+        </div>
+        <details class="adv">
+          <summary>OCR / 静音切高级参数</summary>
+          <div class="row" style="margin-top:8px">
+            <div>
+              <label>ocr_band y0,y1</label>
+              <input type="text" id="mineOcrBand" value="0.68,0.95" />
+            </div>
+            <div>
+              <label>ocr_region x0,y0,x1,y1（可选）</label>
+              <input type="text" id="mineOcrRegion" placeholder="竖排例: 0.02,0.15,0.42,0.70" />
+            </div>
+          </div>
+          <div class="row" style="margin-top:8px">
+            <div>
+              <label>ocr_interval</label>
+              <input type="number" id="mineOcrInterval" value="0.35" step="0.05" />
+            </div>
+            <div>
+              <label>ocr_min_score</label>
+              <input type="number" id="mineOcrMinScore" value="0.5" step="0.05" />
+            </div>
+          </div>
+        </details>
+        <div class="row" style="margin-top:14px">
+          <button class="primary" id="btnMine" type="button">开始 mine</button>
+        </div>
+      </div>
+      <div>
+        <div class="section-title">结果</div>
+        <pre id="mineLog">等待…</pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="ocr" class="panel">
+    <div class="grid grid-2">
+      <div>
+        <div class="section-title">硬字幕 OCR → 同名 .srt（不入库）</div>
+        <label>视频文件或目录</label>
+        <input type="text" id="ocrInput" placeholder="dialect-assets/wenchang/video/某.mp4" />
+        <div class="row" style="margin-top:10px">
+          <div>
+            <label>ocr_band</label>
+            <input type="text" id="ocrBand" value="0.68,0.95" />
+          </div>
+          <div>
+            <label>ocr_region（可选）</label>
+            <input type="text" id="ocrRegion" />
+          </div>
+        </div>
+        <div class="row" style="margin-top:10px">
+          <div>
+            <label>interval</label>
+            <input type="number" id="ocrInterval" value="0.35" step="0.05" />
+          </div>
+          <div>
+            <label>min_score</label>
+            <input type="number" id="ocrMinScore" value="0.5" step="0.05" />
+          </div>
+        </div>
+        <p class="hint">先 OCR 人工改成 .gold.srt，再 mine；比一次直接入库更稳。</p>
+        <button class="primary" id="btnOcr" type="button">开始 OCR</button>
+      </div>
+      <div>
+        <div class="section-title">结果</div>
+        <pre id="ocrLog">等待…</pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="crawl" class="panel">
+    <div class="warn">必须确认版权：勾选「我有权使用」并填写 license_note。不破解 DRM、不绕过付费墙。</div>
+    <div class="grid grid-2">
+      <div>
+        <div class="section-title">URL 爬取入库（yt-dlp）</div>
+        <label>单个 URL（可选）</label>
+        <input type="text" id="crawlUrl" placeholder="https://…" />
+        <label style="margin-top:10px">URL 列表（每行一个）</label>
+        <textarea id="crawlUrls" placeholder="https://…&#10;https://…"></textarea>
+        <label style="margin-top:10px">license_note（必填）</label>
+        <input type="text" id="crawlLicense" placeholder="CC-BY / 官方可下载 / 已获授权-台账见 BIBLIOGRAPHY" />
+        <div class="row" style="margin-top:10px">
+          <div>
+            <label>speaker</label>
+            <input type="text" id="crawlSpeaker" />
+          </div>
+          <div>
+            <label>locale</label>
+            <input type="text" id="crawlLocale" />
+          </div>
+        </div>
+        <div class="checks">
+          <label><input type="checkbox" id="crawlRights" /> 我确认链接可合法用于本项目（i_have_rights）</label>
+          <label><input type="checkbox" id="crawlAllowEmpty" /> allow_empty_text</label>
+          <label><input type="checkbox" id="crawlNoAutoSubs" /> no_auto_subs</label>
+        </div>
+        <div class="row">
+          <div>
+            <label>cookies_from_browser（可选）</label>
+            <input type="text" id="crawlCookies" placeholder="chrome / firefox" />
+          </div>
+          <div>
+            <label>max_downloads</label>
+            <input type="number" id="crawlMax" value="50" />
+          </div>
+        </div>
+        <button class="primary" id="btnCrawl" type="button" style="margin-top:12px">开始 crawl</button>
+      </div>
+      <div>
+        <div class="section-title">结果</div>
+        <pre id="crawlLog">等待…</pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="ingest" class="panel">
+    <div class="grid grid-2">
+      <div>
+        <div class="section-title">已是短音频：import + transcode + qc</div>
+        <label>input 文件或目录</label>
+        <input type="text" id="ingestInput" />
+        <div class="row" style="margin-top:10px">
+          <div>
+            <label>speaker</label>
+            <input type="text" id="ingestSpeaker" />
+          </div>
+          <div>
+            <label>locale</label>
+            <input type="text" id="ingestLocale" />
+          </div>
+        </div>
+        <div class="checks">
+          <label><input type="checkbox" id="ingestFromName" checked /> text_from_filename</label>
+          <label><input type="checkbox" id="ingestSkipCopy" /> skip_copy</label>
+        </div>
+        <button class="primary" id="btnIngest" type="button">开始 ingest</button>
+      </div>
+      <div>
+        <div class="section-title">结果</div>
+        <pre id="ingestLog">等待…</pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="ops" class="panel">
+    <div class="grid grid-2">
+      <div>
+        <div class="section-title">维护</div>
+        <div class="row">
+          <button class="ghost" id="btnQc" type="button">QC</button>
+          <button class="ghost" id="btnTranscode" type="button">transcode</button>
+          <button class="ghost" id="btnSlim" type="button">slim → TTS 字段</button>
+        </div>
+        <p class="hint">slim 会把 manifest 收成训练用字段（去掉信源等）。</p>
+        <div class="section-title">manifest 预览</div>
+        <button class="ghost" id="btnManifest" type="button">加载清单</button>
+        <pre id="opsLog" style="margin-top:10px">等待…</pre>
+      </div>
+      <div>
+        <div class="section-title">条目</div>
+        <pre id="manifestLog">尚未加载</pre>
+      </div>
+    </div>
+  </section>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
