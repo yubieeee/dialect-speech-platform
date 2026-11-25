@@ -1,0 +1,514 @@
+{
+  "dialect": "wenchang",
+  "total": 72,
+  "pass": 72,
+  "warn": 0,
+  "fail": 0,
+  "generated_at": "2026-11-24T15:35:24",
+  "items": [
+    {
+      "id": "wc_01",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 5.056,
+      "wav": "wav16k/老乡你好，今天想办什么业务.wav"
+    },
+    {
+      "id": "wc_02",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 6.741,
+      "wav": "wav16k/密码千万不要随便告诉别人，银行卡要亲自保管好.wav"
+    },
+    {
+      "id": "wc_03",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 7.595,
+      "wav": "wav16k/业务办理结束啦，请收好你的证件、存折或者银行卡.wav"
+    },
+    {
+      "id": "we_0004_木生的信_男声__clip0000",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.9,
+      "wav": "wav16k/木生的信_男声__clip0000.wav"
+    },
+    {
+      "id": "we_0005_木生的信_男声__clip0001",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.1,
+      "wav": "wav16k/木生的信_男声__clip0001.wav"
+    },
+    {
+      "id": "we_0006_木生的信_男声__clip0002",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.0,
+      "wav": "wav16k/木生的信_男声__clip0002.wav"
+    },
+    {
+      "id": "we_0007_木生的信_男声__clip0003",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.8,
+      "wav": "wav16k/木生的信_男声__clip0003.wav"
+    },
+    {
+      "id": "we_0008_木生的信_男声__clip0004",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.7,
+      "wav": "wav16k/木生的信_男声__clip0004.wav"
+    },
+    {
+      "id": "we_0009_木生的信_男声__clip0005",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.7,
+      "wav": "wav16k/木生的信_男声__clip0005.wav"
+    },
+    {
+      "id": "we_0010_木生的信_男声__clip0006",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.8,
+      "wav": "wav16k/木生的信_男声__clip0006.wav"
+    },
+    {
+      "id": "we_0011_木生的信_男声__clip0007",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.2,
+      "wav": "wav16k/木生的信_男声__clip0007.wav"
+    },
+    {
+      "id": "we_0012_木生的信_男声__clip0008",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.3,
+      "wav": "wav16k/木生的信_男声__clip0008.wav"
+    },
+    {
+      "id": "we_0013_木生的信_男声__clip0009",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.5,
+      "wav": "wav16k/木生的信_男声__clip0009.wav"
+    },
+    {
+      "id": "we_0014_木生的信_男声__clip0010",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.4,
+      "wav": "wav16k/木生的信_男声__clip0010.wav"
+    },
+    {
+      "id": "we_0015_木生的信_男声__clip0011",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.2,
+      "wav": "wav16k/木生的信_男声__clip0011.wav"
+    },
+    {
+      "id": "we_0016_木生的信_男声__clip0012",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.9,
+      "wav": "wav16k/木生的信_男声__clip0012.wav"
+    },
+    {
+      "id": "we_0017_木生的信_男声__clip0013",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.3,
+      "wav": "wav16k/木生的信_男声__clip0013.wav"
+    },
+    {
+      "id": "we_0018_木生的信_男声__clip0014",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.7,
+      "wav": "wav16k/木生的信_男声__clip0014.wav"
+    },
+    {
+      "id": "we_0019_木生的信_男声__clip0015",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.5,
+      "wav": "wav16k/木生的信_男声__clip0015.wav"
+    },
+    {
+      "id": "we_0020_木生的信_男声__clip0016",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.8,
+      "wav": "wav16k/木生的信_男声__clip0016.wav"
+    },
+    {
+      "id": "we_0021_木生的信_男声__clip0017",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.7,
+      "wav": "wav16k/木生的信_男声__clip0017.wav"
+    },
+    {
+      "id": "we_0022_木生的信_男声__clip0018",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.7,
+      "wav": "wav16k/木生的信_男声__clip0018.wav"
+    },
+    {
+      "id": "we_0023_木生的信_男声__clip0019",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.8,
+      "wav": "wav16k/木生的信_男声__clip0019.wav"
+    },
+    {
+      "id": "we_0024_木生的信_男声__clip0020",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 3.8,
+      "wav": "wav16k/木生的信_男声__clip0020.wav"
+    },
+    {
+      "id": "we_0025_木生的信_男声__clip0021",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.7,
+      "wav": "wav16k/木生的信_男声__clip0021.wav"
+    },
+    {
+      "id": "we_0026_木生的信_男声__clip0022",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.8,
+      "wav": "wav16k/木生的信_男声__clip0022.wav"
+    },
+    {
+      "id": "we_0027_乡音的故事__clip0000",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.35,
+      "wav": "wav16k/乡音的故事__clip0000.wav"
+    },
+    {
+      "id": "we_0028_乡音的故事__clip0001",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.45,
+      "wav": "wav16k/乡音的故事__clip0001.wav"
+    },
+    {
+      "id": "we_0029_乡音的故事__clip0002",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.75,
+      "wav": "wav16k/乡音的故事__clip0002.wav"
+    },
+    {
+      "id": "we_0030_乡音的故事__clip0003",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.45,
+      "wav": "wav16k/乡音的故事__clip0003.wav"
+    },
+    {
+      "id": "we_0031_乡音的故事__clip0004",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.75,
+      "wav": "wav16k/乡音的故事__clip0004.wav"
+    },
+    {
+      "id": "we_0032_乡音的故事__clip0005",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.95,
+      "wav": "wav16k/乡音的故事__clip0005.wav"
+    },
+    {
+      "id": "we_0033_乡音的故事__clip0006",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 4.15,
+      "wav": "wav16k/乡音的故事__clip0006.wav"
+    },
+    {
+      "id": "we_0034_乡音的故事__clip0007",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.45,
+      "wav": "wav16k/乡音的故事__clip0007.wav"
+    },
+    {
+      "id": "we_0035_乡音的故事__clip0008",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.75,
+      "wav": "wav16k/乡音的故事__clip0008.wav"
+    },
+    {
+      "id": "we_0036_乡音的故事__clip0009",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.75,
+      "wav": "wav16k/乡音的故事__clip0009.wav"
+    },
+    {
+      "id": "we_0037_乡音的故事__clip0010",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.75,
+      "wav": "wav16k/乡音的故事__clip0010.wav"
+    },
+    {
+      "id": "we_0038_乡音的故事__clip0011",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.35,
+      "wav": "wav16k/乡音的故事__clip0011.wav"
+    },
+    {
+      "id": "we_0039_乡音的故事__clip0012",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.35,
+      "wav": "wav16k/乡音的故事__clip0012.wav"
+    },
+    {
+      "id": "we_0040_乡音的故事__clip0013",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.05,
+      "wav": "wav16k/乡音的故事__clip0013.wav"
+    },
+    {
+      "id": "we_0041_乡音的故事__clip0014",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.05,
+      "wav": "wav16k/乡音的故事__clip0014.wav"
+    },
+    {
+      "id": "we_0042_乡音的故事__clip0015",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.05,
+      "wav": "wav16k/乡音的故事__clip0015.wav"
+    },
+    {
+      "id": "we_0043_乡音的故事__clip0016",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.35,
+      "wav": "wav16k/乡音的故事__clip0016.wav"
+    },
+    {
+      "id": "we_0044_乡音的故事__clip0017",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.15,
+      "wav": "wav16k/乡音的故事__clip0017.wav"
+    },
+    {
+      "id": "we_0045_乡音的故事__clip0018",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.35,
+      "wav": "wav16k/乡音的故事__clip0018.wav"
+    },
+    {
+      "id": "we_0046_乡音的故事__clip0019",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 3.55,
+      "wav": "wav16k/乡音的故事__clip0019.wav"
+    },
+    {
+      "id": "we_0047_乡音的故事__clip0020",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 4.2,
+      "wav": "wav16k/乡音的故事__clip0020.wav"
+    },
+    {
+      "id": "we_0048_教师节__clip0000",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.25,
+      "wav": "wav16k/教师节__clip0000.wav"
+    },
+    {
+      "id": "we_0049_教师节__clip0001",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.2,
+      "wav": "wav16k/教师节__clip0001.wav"
+    },
+    {
+      "id": "we_0050_教师节__clip0002",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.7,
+      "wav": "wav16k/教师节__clip0002.wav"
+    },
+    {
+      "id": "we_0051_教师节__clip0003",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.7,
+      "wav": "wav16k/教师节__clip0003.wav"
+    },
+    {
+      "id": "we_0052_教师节__clip0004",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 3.15,
+      "wav": "wav16k/教师节__clip0004.wav"
+    },
+    {
+      "id": "we_0053_教师节__clip0005",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 3.1,
+      "wav": "wav16k/教师节__clip0005.wav"
+    },
+    {
+      "id": "we_0054_教师节__clip0006",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.75,
+      "wav": "wav16k/教师节__clip0006.wav"
+    },
+    {
+      "id": "we_0055_教师节__clip0007",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.8,
+      "wav": "wav16k/教师节__clip0007.wav"
+    },
+    {
+      "id": "we_0056_教师节__clip0008",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.2,
+      "wav": "wav16k/教师节__clip0008.wav"
+    },
+    {
+      "id": "we_0057_教师节__clip0009",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 4.0,
+      "wav": "wav16k/教师节__clip0009.wav"
+    },
+    {
+      "id": "we_0058_教师节__clip0010",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.3,
+      "wav": "wav16k/教师节__clip0010.wav"
+    },
+    {
+      "id": "we_0059_教师节__clip0011",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.3,
+      "wav": "wav16k/教师节__clip0011.wav"
+    },
+    {
+      "id": "we_0060_教师节__clip0012",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.7,
+      "wav": "wav16k/教师节__clip0012.wav"
+    },
+    {
+      "id": "we_0061_教师节__clip0013",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.25,
+      "wav": "wav16k/教师节__clip0013.wav"
+    },
+    {
+      "id": "we_0062_教师节__clip0014",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.7,
+      "wav": "wav16k/教师节__clip0014.wav"
+    },
+    {
+      "id": "we_0063_教师节__clip0015",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.7,
+      "wav": "wav16k/教师节__clip0015.wav"
+    },
+    {
+      "id": "we_0064_教师节__clip0016",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 4.5,
+      "wav": "wav16k/教师节__clip0016.wav"
+    },
+    {
+      "id": "we_0065_教师节__clip0017",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 3.1,
+      "wav": "wav16k/教师节__clip0017.wav"
+    },
+    {
+      "id": "we_0066_教师节__clip0018",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 3.1,
+      "wav": "wav16k/教师节__clip0018.wav"
+    },
+    {
+      "id": "we_0067_教师节__clip0019",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.8,
+      "wav": "wav16k/教师节__clip0019.wav"
+    },
+    {
+      "id": "we_0068_教师节__clip0020",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 2.2,
+      "wav": "wav16k/教师节__clip0020.wav"
+    },
+    {
+      "id": "we_0069_教师节__clip0021",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 4.0,
+      "wav": "wav16k/教师节__clip0021.wav"
+    },
+    {
+      "id": "we_0070_教师节__clip0022",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.75,
+      "wav": "wav16k/教师节__clip0022.wav"
+    },
+    {
+      "id": "we_0071_教师节__clip0023",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 0.85,
+      "wav": "wav16k/教师节__clip0023.wav"
+    },
+    {
+      "id": "we_0072_教师节__clip0024",
+      "qc_status": "pass",
+      "qc_notes": [],
+      "duration_sec": 1.027,
+      "wav": "wav16k/教师节__clip0024.wav"
+    }
+  ]
+}

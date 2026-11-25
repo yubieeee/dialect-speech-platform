@@ -1,0 +1,44 @@
+# secrets
+*.csv
+**/apiKey*
+默认业务空间*
+
+# corpus-kit smoke dialect（勿再生成到仓库树内）
+/kitdemo/
+
+# bulky / copyrighted binaries
+**/*.pdf
+**/*.PDF
+**/*.docx
+**/private_files/
+**/mine_work/
+**/crawl_dl/
+**/.hardsub_ocr/
+**/.subs_cache/
+**/inbox/**
+!**/inbox/.gitkeep
+**/*.zip
+**/*.tar
+**/*.tar.gz
+**/*.7z
+**/*.mp4
+**/*.mkv
+**/*.webm
+**/*.m4a
+**/*.mov
+**/*.avi
+
+# training artifacts
+**/train/exp/
+**/train/exports/**/exp/
+**/train/exports/**/tensorboard/
+
+# lab temp / preview
+**/lab_uploads/**
+!**/.gitkeep
+
+# 音频默认不入库（清单 / 金标文本可提交；本机保留 wav）
+**/*.wav
+**/*.flac
+**/evals/*.json
+!**/evals/*.md

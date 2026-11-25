@@ -1,0 +1,53 @@
+# 已有独立远程的交付仓（勿纳入本仓库）
+/asr-tts/
+/voice-engine/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 编辑器 / 系统
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# 本机密钥与环境
+.env
+.env.*
+*.pem
+*.key
+**/apiKey*
+默认业务空间*
+
+# dialect-assets 大文件与中间产物（细则见 dialect-assets/.gitignore）
+**/private_files/
+**/mine_work/
+**/crawl_dl/
+**/.hardsub_ocr/
+**/lab_uploads/
+**/inbox/**
+!**/inbox/.gitkeep
+**/train/exp/
+*.mp4
+*.mkv
+*.webm
+*.m4a
+*.mov
+*.avi
+*.wav
+*.flac
+*.pdf
+*.PDF
+*.docx
+*.zip
+*.tar
+*.tar.gz
+*.7z

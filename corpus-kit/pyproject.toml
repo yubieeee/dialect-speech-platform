@@ -1,0 +1,21 @@
+[project]
+name = "corpus-kit"
+version = "0.1.0"
+description = "Reusable dialect speech corpus ingest toolkit"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+crawl = ["yt-dlp>=2024.1.0"]
+ocr = ["rapidocr>=3.0", "onnxruntime>=1.16", "opencv-python-headless>=4.8", "Pillow>=10"]
+all = ["yt-dlp>=2024.1.0", "rapidocr>=3.0", "onnxruntime>=1.16", "opencv-python-headless>=4.8", "Pillow>=10"]
+
+[project.scripts]
+corpus-kit = "corpus_kit.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["corpus_kit*"]

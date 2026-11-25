@@ -1,0 +1,114 @@
+# 文昌口音常用词 · 汉字 ↔ 海南拼音（调号 1–8）
+# 来源：dialect-assets/image/常用词拼音/ 小程序截图「文昌口音（完善中）」
+# status=draft；未母语终校；序号可能跨页重复截取已去重
+id	text_zh	phonetic	category	source
+cw_001	白斩鸡	be⁵ dan³ goi¹	food	image/常用词拼音
+cw_002	猪脚饭	ddu¹ ha¹ bui¹	food	image/常用词拼音
+cw_003	海南粉	hhai³ nam² hhun³	food	image/常用词拼音
+cw_004	清补凉	seng¹ bou³ lio²	food	image/常用词拼音
+cw_005	抱罗粉	bao⁶ lo² un³	food	image/常用词拼音
+cw_006	椰子汁	ia² zi³ ziab⁷	food	image/常用词拼音
+cw_007	咖啡	go¹ vi⁶	food	image/常用词拼音
+cw_008	老爸茶	lao⁵ ba⁶ dde²	food	image/常用词拼音
+cw_009	粽	dang⁴	food	image/常用词拼音
+cw_010	黑鱼	ou¹ u²	food	image/常用词拼音
+cw_011	番薯藤	hhuan¹ du² ddin²	food	image/常用词拼音
+cw_012	鸡屎藤	goi¹ dai³ ddin²	food	image/常用词拼音
+cw_013	炒粉	sa³ bua³	food	image/常用词拼音
+cw_014	饭	moi²	food	image/常用词拼音
+cw_015	干饭	moi² bui¹	food	image/常用词拼音
+cw_016	稀饭	moi² dog⁷	food	image/常用词拼音
+cw_017	包子	bao¹ zi³	food	image/常用词拼音
+cw_018	馒头	man⁴ hhao²	food	image/常用词拼音
+cw_019	油条	iu² ddiao²	food	image/常用词拼音
+cw_020	牛奶	gu² ne¹	food	image/常用词拼音
+cw_021	面包	mi¹ bao¹	food	image/常用词拼音
+cw_022	鸡蛋	goi¹ nui⁵	food	image/常用词拼音
+cw_023	一	yiag⁸	number	image/常用词拼音
+cw_024	二	no⁵	number	image/常用词拼音
+cw_025	三	da¹	number	image/常用词拼音
+cw_026	四	di⁴	number	image/常用词拼音
+cw_027	五	ngou⁵	number	image/常用词拼音
+cw_028	六	lag⁵	number	image/常用词拼音
+cw_029	七	sid⁷	number	image/常用词拼音
+cw_030	八	boi⁶	number	image/常用词拼音
+cw_031	九	gao³	number	image/常用词拼音
+cw_032	十	dab⁵	number	image/常用词拼音
+cw_033	百	be⁶	number	image/常用词拼音
+cw_034	千	sai¹	number	image/常用词拼音
+cw_035	万	van¹	number	image/常用词拼音
+cw_036	亿	i⁶	number	image/常用词拼音
+cw_037	机场	gi¹ ddio²	travel	image/常用词拼音
+cw_038	车站	sia¹ dam⁵	travel	image/常用词拼音
+cw_039	酒店	ziu³ ddiam⁴	travel	image/常用词拼音
+cw_040	饭店	moi² ddiam⁴	travel	image/常用词拼音
+cw_041	打的	pa⁶ deg⁷	travel	image/常用词拼音
+cw_042	飞机	boi¹ gi¹	travel	image/常用词拼音
+cw_043	火车	hhoi³ sia¹	travel	image/常用词拼音
+cw_044	船	dun²	travel	image/常用词拼音
+cw_045	公交车	gong¹ giao¹ sia¹	travel	image/常用词拼音
+cw_046	你好	lu³ hho³	greeting	image/常用词拼音
+cw_047	谢谢	dia⁵ dia⁵	greeting	image/常用词拼音
+cw_048	对不起	ddui⁴ fo² hi³	greeting	image/常用词拼音
+cw_049	早上好	da³ zio¹ ho³	greeting	image/常用词拼音
+cw_050	你	lu³	pronoun	image/常用词拼音
+cw_051	我	va³	pronoun	image/常用词拼音
+cw_052	他	i¹	pronoun	image/常用词拼音
+cw_053	你们	lu³ nang²	pronoun	image/常用词拼音
+cw_054	我们	va³ nang²	pronoun	image/常用词拼音
+cw_055	他们	i¹ nang²	pronoun	image/常用词拼音
+cw_056	姑娘	mai⁶ gia³	people	image/常用词拼音
+cw_057	海口	hai³ hao³	place	image/常用词拼音
+cw_058	三亚	dam¹ a¹	place	image/常用词拼音
+cw_059	三沙	da¹ sa¹	place	image/常用词拼音
+cw_060	儋州	ddam¹ ziu¹	place	image/常用词拼音
+cw_061	五指山	ngou⁵ zi³ dua¹	place	image/常用词拼音
+cw_062	文昌	vun² sio¹	place	image/常用词拼音
+cw_063	琼海	heng² hhai³	place	image/常用词拼音
+cw_064	万宁	van¹ neng²	place	image/常用词拼音
+cw_065	定安	ddeng⁶ an¹	place	image/常用词拼音
+cw_066	屯昌	dun² sang¹	place	image/常用词拼音
+cw_067	澄迈	ddeng¹ mai⁶	place	image/常用词拼音
+cw_068	临高	lim² go¹	place	image/常用词拼音
+cw_069	白沙	be⁵ dua¹	place	image/常用词拼音
+cw_070	昌江	sang¹ giang¹	place	image/常用词拼音
+cw_071	乐东	log⁷ ddong¹	place	image/常用词拼音
+cw_072	东方	ddang¹ fang¹	place	image/常用词拼音
+cw_073	陵水	leng² dui³	place	image/常用词拼音
+cw_074	保亭	bo³ ddeng²	place	image/常用词拼音
+cw_075	琼中	heng² dong¹	place	image/常用词拼音
+cw_076	莲雾	ddiam² bu⁶	fruit	image/常用词拼音
+cw_077	石榴	zio⁵ lao²	fruit	image/常用词拼音
+cw_078	龙眼	liang² hhai³	fruit	image/常用词拼音
+cw_079	菠萝	bo¹ lo²	fruit	image/常用词拼音
+cw_080	菠萝蜜	bao¹ mid⁵	fruit	image/常用词拼音
+cw_081	椰子	ia² zi³	fruit	image/常用词拼音
+cw_082	荔枝	ddai¹ zi¹	fruit	image/常用词拼音
+cw_083	绿橙	liag⁸ seng²	fruit	image/常用词拼音
+cw_084	发烧	hhuad⁷ yid⁵	health	image/常用词拼音
+cw_085	肚子疼	ddou³ ia⁴	health	image/常用词拼音
+cw_086	拉肚子	dia⁴ dai³	health	image/常用词拼音
+cw_087	看病	mo¹ be¹	health	image/常用词拼音
+cw_088	结婚	gid⁷ hhun¹	life	image/常用词拼音
+cw_089	新郎	din¹ gua¹	life	image/常用词拼音
+cw_090	新娘	din¹ nio²	life	image/常用词拼音
+cw_091	男人	gong¹ dde¹	people	image/常用词拼音
+cw_092	女人	da¹ vou³	people	image/常用词拼音
+cw_093	理发	ga¹ mo²	life	image/常用词拼音
+cw_094	厨师	ddu² se¹	people	image/常用词拼音
+cw_095	电脑	ddin⁶ nao³	tech	image/常用词拼音
+cw_096	手机	siu³ gi¹	tech	image/常用词拼音
+cw_097	单车	ddan¹ sia¹	travel	image/常用词拼音
+cw_098	钥匙	do³ di²	life	image/常用词拼音
+cw_099	家	siu⁴	life	image/常用词拼音
+cw_100	恭喜发财	gong¹ hhi³ hhuad⁷ sai²	greeting	image/常用词拼音
+cw_101	东西南北	ddang¹ dai¹ nam² bag⁷	direction	image/常用词拼音
+cw_102	上下左右	zio⁵ e⁵ do³ yiu⁵	direction	image/常用词拼音
+cw_103	游泳	yiu² yiong³	life	image/常用词拼音
+cw_104	干什么	do⁶ mi⁶	greeting	image/常用词拼音
+cw_105	万泉河	van¹ suan² hho²	place	image/常用词拼音
+cw_106	五公祠	ngou⁵ gong¹ si²	place	image/常用词拼音
+cw_107	秀英区	diu⁶ eng¹ hi¹	place	image/常用词拼音
+cw_108	龙华区	liang² hhua² hi¹	place	image/常用词拼音
+cw_109	琼山区	heng² dua¹ hi¹	place	image/常用词拼音
+cw_110	美兰区	moi³ lan² hi¹	place	image/常用词拼音
